@@ -1,0 +1,216 @@
+
+/* Handle basic elements */
+/*--------------------------------------------------------*/
+body {
+  background-color: #fff;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  max-width: 1000px;
+}
+
+/* Handle navbar component */
+/*--------------------------------------------------------*/
+#navbar {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar>.container-fluid .navbar-brand {
+  margin: 0;
+}
+
+a.navbar-brand {
+  color: #fff;
+  padding: 13px 13px 13px 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Use flexbox to justify the navbar items */
+#navbar ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#navbar ul li a {
+  padding: 14px;;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Make the navbar lists a bit farther to the navbar brand */
+#navbar ul li:nth-of-type(1) {
+  margin-left: 6%;
+}
+
+/* Make the background fill when the mouse hover */
+#navbar #mydropdown ul>li>a:hover {
+  background-clip: border-box;
+  background-color: #333333;
+}
+
+/* Give the toggle bar white color */
+.icon-bar {
+  background-color: #fff;
+}
+
+/* Give toggle bar a border */
+#navbar button {
+  border: 1px solid #fff;
+}
+
+/* Handle banner part */
+/*--------------------------------------------------------*/
+.img-full {
+  min-width: 100%;
+}
+
+.bannerCaption {
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  left: 8%;
+  top: 13%;
+  font-family: "Andale Mono", sans-serif;
+  font-weight: bolder;
+}
+
+.bannerCaption button {
+  margin-top: 5%;
+}
+
+/* Set the carousel indicators vertically */
+.carousel-indicators {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+  left: 93%;
+  width: 0;
+  margin: 0;
+}
+
+.carousel-indicators li {
+  height: 18px;
+  width: 18px;
+}
+
+.carousel-indicators .active {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* Handle Signup form */
+/*--------------------------------------------------------*/
+#banner .carousel-inner form {
+  background-color: #c83638;
+  padding: 0;
+}
+
+#signup {
+  padding: 4% 5%;
+}
+
+#signup label{
+  font-family: "Courier New", monospace;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#signup input{
+  height: 3.4rem;
+}
+
+#signup button {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+/* Handle links */
+/*--------------------------------------------------------*/
+#logos {
+  margin-top: 30px;
+}
+
+#logos ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+#logos img {
+  max-width: 190px;
+  max-height: 190px;
+}
+
+#logos p {
+  margin-top: 10px;
+}
+
+/* Handle different viewport size */
+/*------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  a.navbar-brand {
+    color: #fff;
+    padding: 13px 13px 13px 22%;
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  #navbar ul li:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .bannerCaption {
+    left: 6%;
+  }
+}
+
+@media (max-width: 991px) {
+  a.navbar-brand {
+    color: #fff;
+    padding: 13px 13px 13px 18%;
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  #logos img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  a.navbar-brand {
+    color: #fff;
+    padding: 13px 13px 13px 7%;
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  #navbar ul li:nth-of-type(1) {
+    margin-left: 2%;
+  }
+
+  #signup label{
+    font-size: 2rem;
+  }
+}
